@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Aiden's Page</title>
-<link rel="stylesheet" href="HomePage.css">
+<link rel="stylesheet" href="MyPage/HomePage.css">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
@@ -14,10 +14,11 @@
 <header> 
   <h1>Aiden Olsen</h1>
 </header>
-<nav>
+<nav class="homeHeight">
   <ul>
     <li><a href="index.php">Home</a></li>
-    <li><a href="Assignments.php">Assignments</a></li>
+    <li><a href="MyPage/Assignments.php">Assignments</a></li>
+    <li><a href="MyPage/aboutMe.php">About me</a></li>
   </ul>
 </nav>
 <main>
@@ -34,6 +35,6 @@
     <a href="https://github.com/AidGO/HomePage">https://github.com/AidGO/HomePage</a>
 </footer>
 </main>
-</div>
 </body>
 </html>
+</div>
