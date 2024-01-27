@@ -1,10 +1,19 @@
-body, html 
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body
 {
     margin: 0%;
     background-color: #212120;
     color: #ffffff;
     font-family: Verdana, Arial, sans-serif;
     padding: 0;
+
+    height: auto;
+    min-height: 100vh;
 }
 
 .aboutme
@@ -37,13 +46,36 @@ img
 
 header
 {
+    position: fixed; top: 0;
+	width: 100%;
+    
+
     background-color: #313030;
     height: 150px;
-    background-repeat: no-repeat;
     margin: 0;
     text-align: center;
     border-bottom: 2px solid #fff;
 }
+
+/* .header-img-container{
+	position: relative;
+	width: inherit;
+	height: 300px;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-img-container img{
+	position: absolute;
+	top: 0;
+	left:0;
+	width:inherit;
+	object-fit: fill;
+	z-index: -10;
+} */
 
 h1
 {   
@@ -65,7 +97,7 @@ h2
 p
 {
     padding-left: 3em;
-    padding-right: 2em;
+    padding-bottom: 3vh;
 }
 
 div
@@ -82,14 +114,22 @@ ul
 
 nav
 {
-    text-align: center;
-    font-weight: bold;
     padding-top: 10px;
     font-size: 1.5em;
-    float: left;
     width: 200px;
+    float: left;
+    position: fixed;
+
+    text-align: center;
+    font-weight: bold;
     background-color: #1d1d1d;
     border-right: 2px solid #3e3d3d;
+    height: 80vh;
+    margin-top: 150px;
+}
+
+body nav {
+    min-height: fit-content;
 }
 
 nav a:link {color: #ffffff;}
@@ -142,7 +182,9 @@ footer
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    position:fixed;bottom:0;left:0;right:0;height:30px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .floatleft
@@ -156,17 +198,7 @@ main
     padding-bottom: 2em;
     padding-left: 15%;
     padding-right: 15%;
-    display: block;
     margin-left: 200px;
     background-color: #212120;
-    height: auto;
-}
-
-#wrapper
-{
-    
-    margin:0 auto;
-    padding:0;
-    background-color: #212120;
-    height: 100%;
+    padding-top: 150px; 
 }
