@@ -3,7 +3,7 @@ $config = parse_ini_file('../config.ini', true);
 $environment = $config['ENVIRONMENT'];
 $URL_BASE = $config[$environment]['URL_BASE'];
 define('URL_ROOT', "$URL_BASE");
-define('APP_ROOT', $_SERVER['DOCUMENT_ROOT']); //Have to add " . '/kx6868dj'" after $_SERVER['DOCUMENT_ROOT'] for aboutMe.php and Assignments.php. I don't know why
+define('APP_ROOT', dirname(__FILE__,2));
 
     $data = 
     [
@@ -39,6 +39,6 @@ define('APP_ROOT', $_SERVER['DOCUMENT_ROOT']); //Have to add " . '/kx6868dj'" af
         ]
         ]
     ];
-  include_once(APP_ROOT . '/HomePage/src/views/headview.php');  //Have to disclude HomePage for the server
-  include_once(APP_ROOT . '/HomePage/src/views/aboutMeMainView.php');
+  include_once(APP_ROOT . '/src/views/headview.php');
+  include_once(APP_ROOT . '/src/views/aboutMeMainView.php');
 ?> 

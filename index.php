@@ -3,7 +3,7 @@ $config = parse_ini_file('config.ini', true);
 $environment = $config['ENVIRONMENT'];
 $URL_BASE = $config[$environment]['URL_BASE'];
 define('URL_ROOT', "$URL_BASE");
-define('APP_ROOT', $_SERVER['DOCUMENT_ROOT']);
+define('APP_ROOT', dirname(__FILE__,1));
 
   $data = 
   [
