@@ -40,5 +40,5 @@ define('APP_ROOT', dirname(__FILE__,2));
         ]
     ];
   include_once(APP_ROOT . '/src/views/headview.php');
-  include_once(APP_ROOT . '/src/views/aboutMeMainView.php');
+  include_once(APP_ROOT . '/src/views/aboutmeview.php');
 ?> 
